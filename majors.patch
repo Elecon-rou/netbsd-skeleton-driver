@@ -1,0 +1,12 @@
+--- ./sys/conf/majors.orig	2017-04-01 15:02:21.567357606 +0300
++++ ./sys/conf/majors	2017-04-01 15:01:58.219775552 +0300
+@@ -9,6 +9,9 @@
+ #
+ # Majors 160-511 are used for the MI drivers.
+ 
++# Skeleton pseudo-device
++device-major skel      char 140		   skel
++
+ device-major crypto    char 160		   crypto	single
+ device-major pf        char 161		   pf		single
+ #obsolete    vinum     char 162		   vinum

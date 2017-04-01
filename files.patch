@@ -1,0 +1,12 @@
+--- ./sys/conf/files.orig	2017-04-01 15:00:49.883998834 +0300
++++ ./sys/conf/files	2017-04-01 14:56:51.265270358 +0300
+@@ -1488,6 +1488,10 @@
+ file	dev/pud/pud.c			pud
+ file	dev/pud/pud_dev.c		pud
+ 
++# Skeleton pseudo-device
++defpseudo skel
++file	dev/skel.c		skel	needs-flag
++
+ # device-mapper driver for LVM
+ include "dev/dm/files.dm"
